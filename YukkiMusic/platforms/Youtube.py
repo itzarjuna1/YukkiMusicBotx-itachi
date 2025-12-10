@@ -6,7 +6,7 @@ from googleapiclient.discovery import build
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from utils.formatters import time_to_seconds  # Your own formatter module
+from YukkiMusic.utils.formatters import time_to_seconds  # Your own formatter module
 
 load_dotenv()  # Load .env file
 
