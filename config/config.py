@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "35279715"))
+API_HASH = getenv("API_HASH", "b4c339216397b5941d88c8617d2dc12b")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003468243393"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "7852340648").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/itzarjuna1/YukkiMusicBotx-itachi",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -138,7 +138,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -157,7 +157,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "Yukkilogs.txt"
+LOG_FILE_NAME = "itachilogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
@@ -168,65 +168,65 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg")
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/Ping.jpeg",
 )
 
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/Playlist.jpeg",
 )
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/Global.jpeg",
 )
 
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/Stats.jpeg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/Audio.jpeg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/Video.jpeg",
 )
 
 STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/Stream.jpeg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
-    "SOUNCLOUD_IMG_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/Soundcloud.jpeg",
 )
 
 YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/Youtube.jpeg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/SpotifyArtist.jpeg",
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL",
+    "https://graph.org/file/1472b5b3882112d30954d-3adce13858ed3527f0.jpg",
     "assets/SpotifyAlbum.jpeg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL",
+    "https://graph.org/file/88c43dfc225cf46db1792-007008bbe37f49cf84.jpg",
     "assets/SpotifyPlaylist.jpeg",
 )
 
